@@ -1,0 +1,1 @@
+window.euCookieComplianceLoadScripts = function(category) {if (category === "google_analytics") {var scriptTag = document.createElement("script");scriptTag.src = "https:\/\/essex-gov.nomensa.xyz\/modules\/custom\/gull_cookie_settings_block\/js\/deferred-ga-script-runner.js";document.body.appendChild(scriptTag);}}

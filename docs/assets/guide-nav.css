@@ -2,6 +2,7 @@
   margin-bottom: var(--vertical-rhythm-spacing);
   padding: var(--section-spacing-vertical-guide-nav) var(--section-spacing-horizontal-guide-nav);
   background-color: var(--color-grey-lighter);
+  border-bottom: var(--border);
 }
 
 .lgd-guide-nav__list {
@@ -16,7 +17,7 @@
 
 .lgd-guide-nav__list-item {
   margin-bottom: var(--spacing);
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-medium);
   break-inside: avoid-column;
 }
 

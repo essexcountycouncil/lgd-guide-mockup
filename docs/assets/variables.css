@@ -26,7 +26,7 @@ body {
   --spacing-largest: calc(var(--spacing) * 2.5);
   --spacing-mega: calc(var(--spacing) * 3);
   --spacing-padding-horizontal: var(--spacing);
-  --line-height: 1.5;
+  --line-height: 1.8;
   --vertical-rhythm-spacing: calc(var(--line-height) * 1rem);
 
   /* Colours */
@@ -85,14 +85,14 @@ body {
     - Scale factor: 1.303
     - Details: https://www.gridlover.net/try
   */
-  --font-size: 1rem;
+  --font-size: 1.125rem;
   --font-size-smallest: calc(var(--font-size) * 0.3);
   --font-size-smaller: calc(var(--font-size) * 0.5);
   --font-size-small: calc(var(--font-size) * 0.75);
   --font-size-medium: calc(var(--font-size) * 1);
-  --font-size-large: calc(var(--font-size) * 1.3125);
-  --font-size-larger: calc(var(--font-size) * 1.6875);
-  --font-size-largest: calc(var(--font-size) * 2.875);
+  --font-size-large: calc(var(--font-size) * 1.25);
+  --font-size-larger: calc(var(--font-size) * 1.5625);
+  --font-size-largest: calc(var(--font-size) * 1.953125);
   --font-size-h1: clamp(var(--font-size-larger), 10vw, var(--font-size-largest));
   --font-size-h2: clamp(var(--font-size-large), 8vw, var(--font-size-larger));
   --font-size-h3: clamp(var(--font-size-medium), 6vw, var(--font-size-large));
@@ -272,9 +272,10 @@ body {
   --sidebar-exposed-form-item-spacing: var(--spacing);
 
   /* Guide Navigation */
-  --section-spacing-vertical-guide-nav: calc(var(--spacing-large) + 1rem); /* 1rem to account for padding on left of bullets */
-  --section-spacing-horizontal-guide-nav: var(--spacing-large);
-  --guide-nav-column-count: 3;
+  /* --section-spacing-vertical-guide-nav: calc(var(--spacing-large) + 1rem); 1rem to account for padding on left of bullets */
+  --section-spacing-vertical-guide-nav: 0;
+  --section-spacing-horizontal-guide-nav: 0;
+  --guide-nav-column-count: 1;
 
   /* IA Block */
   --ia-block-bg-color: var(--color-white);

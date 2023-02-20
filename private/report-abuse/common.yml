@@ -1,1 +1,14 @@
-"guide_title": "Report abuse or neglect"
+guide_title: Report abuse or neglect
+guide_pages:
+  - url: report-concern-about-child"
+    title: Report a concern about an adult
+  - url: report-concern-about-child
+    title: Report a concern about a child
+  - url: what-abuse-what-neglect"
+    title: What is abuse? What is neglect?
+  - url: child-abuse
+    title: Child abuse
+  - url: domestic-abuse
+    title: Domestic abuse
+  - url: deprivation-liberty-safeguards-dols
+    title: Deprivation of Liberty Safeguards (DoLS)

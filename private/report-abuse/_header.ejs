@@ -12,7 +12,7 @@
                     health</a>
                 </li>
                 <li class="breadcrumbs__item">
-                  <%= common.guide_title %>: <%= title %>
+                  <%= common.guide_title %>: <%= page_title %>
                 </li>
               </ol>
             </nav>
@@ -64,7 +64,7 @@
 
               <nav class="lgd-guide-nav" aria-label="Guide">
                 <ul class="lgd-guide-nav__list">
-                  <% if (title === "Report a concern about an adult") { %>
+                  <% if (page_title === "Report a concern about an adult") { %>
                   <li class="lgd-guide-nav__list-item lgd-guide-nav__list-item--active" aria-current="page">Report a
                     concern about an adult</li>
                   <% } else { %>
@@ -116,7 +116,7 @@
               <div class="lgd-container padding-horizontal">
 
                 <h2 class="lgd-guides__title">
-                  <%= title %>
+                  <%= page_title %>
                 </h2>
 
 

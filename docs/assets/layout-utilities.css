@@ -66,3 +66,9 @@
 .layout__region > * {
   margin-bottom: var(--vertical-rhythm-spacing);
 }
+
+/* Commented out for now as I couldn't get this working properly */
+
+/* .node__restricted-width-section {
+  max-width: var(--width-restricted-width-section);
+} */

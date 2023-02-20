@@ -12,7 +12,7 @@
                     health</a>
                 </li>
                 <li class="breadcrumbs__item">
-                  Report abuse or neglect: Report a concern about an adult
+                  <%= common.guide_title %>: <%= title %>
                 </li>
               </ol>
             </nav>
@@ -47,7 +47,7 @@
 
               <div class="lgd-page-title-block">
 
-                <h1 class="lgd-page-title-block__title">Report abuse or neglect</h1>
+                <h1 class="lgd-page-title-block__title"><%= common.guide_title %></h1>
 
                 <p class="lgd-page-title-block__subheader">Report abuse or neglect, types of abuse, safeguarding and
                   deprivation of liberty safeguards</p>
@@ -64,8 +64,14 @@
 
               <nav class="lgd-guide-nav" aria-label="Guide">
                 <ul class="lgd-guide-nav__list">
+                  <% if (title === "Report a concern about an adult") { %>
                   <li class="lgd-guide-nav__list-item lgd-guide-nav__list-item--active" aria-current="page">Report a
                     concern about an adult</li>
+                  <% } else { %>
+                    <li class="lgd-guide-nav__list-item"><a
+                      href="https://www-essex-gov-uk.nomensa.xyz/adult-social-care-and-health/report-abuse-or-neglect/report-concern-about-child"
+                      hreflang="en">Report a concern about an adult</a></li>
+                  <% }  %>
                   <li class="lgd-guide-nav__list-item"><a
                       href="https://www-essex-gov-uk.nomensa.xyz/adult-social-care-and-health/report-abuse-or-neglect/report-concern-about-child"
                       hreflang="en">Report a concern about a child</a></li>
@@ -103,4 +109,16 @@
 
         <div class="lgd-region__inner lgd-region__inner--content">
           <div id="block-essex-localgov-mainpagecontent-scarfolk--2" class="block block-system block-system-main-block">
+
+            <article data-quickedit-entity-id="node/1064"
+              class="lgd-guides lgd-guides--page node node--type-localgov-guides-page node--view-mode-full node__restricted-width-section"
+              data-once="quickedit" data-quickedit-entity-instance-id="0">
+              <div class="lgd-container padding-horizontal">
+
+                <h2 class="lgd-guides__title">
+                  <%= title %>
+                </h2>
+
+
+                <div class="lgd-guides__content node__content">
 

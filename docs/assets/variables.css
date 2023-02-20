@@ -88,7 +88,7 @@ body {
   --font-size: 1.125rem;
   --font-size-smallest: calc(var(--font-size) * 0.3);
   --font-size-smaller: calc(var(--font-size) * 0.5);
-  --font-size-small: calc(var(--font-size) * 0.75);
+  --font-size-small: calc(var(--font-size) * 0.85);
   --font-size-medium: calc(var(--font-size) * 1);
   --font-size-large: calc(var(--font-size) * 1.25);
   --font-size-larger: calc(var(--font-size) * 1.5625);
@@ -159,7 +159,7 @@ body {
   --breadcrumbs-background-color: var(--color-white);
   --breadcrumbs-border: var(--border);
   --breadcrumbs-divider: "»";
-  --breadcrumbs-font-size: var(--font-size-medium);
+  --breadcrumbs-font-size: var(--font-size-small);
   --breadcrumbs-padding-vertical: var(--spacing-small);
   --breadcrumbs-padding-horizontal: 0;
   --breadcrumbs-link-color: var(--color-link);

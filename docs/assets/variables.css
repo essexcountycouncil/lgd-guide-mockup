@@ -88,7 +88,7 @@ body {
   --font-size: 1.125rem;
   --font-size-smallest: calc(var(--font-size) * 0.3);
   --font-size-smaller: calc(var(--font-size) * 0.5);
-  --font-size-small: calc(var(--font-size) * 0.85);
+  --font-size-small: calc(var(--font-size) * 0.9);
   --font-size-medium: calc(var(--font-size) * 1);
   --font-size-large: calc(var(--font-size) * 1.25);
   --font-size-larger: calc(var(--font-size) * 1.5625);

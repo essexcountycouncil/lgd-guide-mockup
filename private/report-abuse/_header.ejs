@@ -49,8 +49,7 @@
 
                 <h1 class="lgd-page-title-block__title"><%= common.guide_title %></h1>
 
-                <p class="lgd-page-title-block__subheader">Report abuse or neglect, types of abuse, safeguarding and
-                  deprivation of liberty safeguards</p>
+                <p class="lgd-page-title-block__subheader"><%= common.guide_summary %></p>
 
               </div>
 
@@ -64,29 +63,21 @@
 
               <nav class="lgd-guide-nav" aria-label="Guide">
                 <ul class="lgd-guide-nav__list">
-                  <% if (page_title === "Report a concern about an adult") { %>
-                  <li class="lgd-guide-nav__list-item lgd-guide-nav__list-item--active" aria-current="page">Report a
-                    concern about an adult</li>
-                  <% } else { %>
+
+                  <% for (const [_, {url, title}] of Object.entries(common.guide_pages)) { %>
+
+                    <% if (title === page_title) { %>
+                      <li class="lgd-guide-nav__list-item lgd-guide-nav__list-item--active" aria-current="page">
+                        <%= page_title %>
+                      </li>
+                      <% } else { %>
+                    
                     <li class="lgd-guide-nav__list-item"><a
-                      href="https://www-essex-gov-uk.nomensa.xyz/adult-social-care-and-health/report-abuse-or-neglect/report-concern-about-child"
-                      hreflang="en">Report a concern about an adult</a></li>
-                  <% }  %>
-                  <li class="lgd-guide-nav__list-item"><a
-                      href="https://www-essex-gov-uk.nomensa.xyz/adult-social-care-and-health/report-abuse-or-neglect/report-concern-about-child"
-                      hreflang="en">Report a concern about a child</a></li>
-                  <li class="lgd-guide-nav__list-item"><a
-                      href="https://www-essex-gov-uk.nomensa.xyz/adult-social-care-and-health/report-abuse-or-neglect/what-abuse-what-neglect"
-                      hreflang="en">What is abuse? What is neglect?</a></li>
-                  <li class="lgd-guide-nav__list-item"><a
-                      href="https://www-essex-gov-uk.nomensa.xyz/adult-social-care-and-health/report-abuse-or-neglect/child-abuse"
-                      hreflang="en">Child abuse</a></li>
-                  <li class="lgd-guide-nav__list-item"><a
-                      href="https://www-essex-gov-uk.nomensa.xyz/adult-social-care-and-health/report-abuse-or-neglect/domestic-abuse"
-                      hreflang="en">Domestic abuse</a></li>
-                  <li class="lgd-guide-nav__list-item"><a
-                      href="https://www-essex-gov-uk.nomensa.xyz/adult-social-care-and-health/report-abuse-or-neglect/deprivation-liberty-safeguards-dols"
-                      hreflang="en">Deprivation of Liberty Safeguards (DoLS)</a></li>
+                      href="<%= common.guide_root_url %><%= url %>"
+                      hreflang="en">
+                    <%= title %></a>
+                  
+                  <% }} %>
                 </ul>
               </nav>
 
